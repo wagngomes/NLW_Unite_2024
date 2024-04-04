@@ -4,8 +4,18 @@ Content-Type: application/json
 
 
 {
-    "title": "DB studio",
+    "title": "DB palestra",
     "details": "um evento para apaixonados por database",
-    "maximumAttendees": 200
+    "maximumAttendees": 150
 
+}
+
+###
+
+POST http://localhost:3333/events/9af5ecb0-2236-4bdd-8f75-78b2869dd1b3/attendees
+Content-Type: application/json
+
+{
+    "name": "Wagner Gomes",
+    "email": "wagner@gmail.com"
 }
