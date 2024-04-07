@@ -14,7 +14,7 @@ export async function getEvent(app: FastifyInstance) {
             }),
 
             response: {
-                200: {
+                200: z.object({
                     event: z.object({
 
                         id: z.string().uuid(),
@@ -26,7 +26,7 @@ export async function getEvent(app: FastifyInstance) {
         
 
                     })
-                }
+                })
             },
         }
     }, async (request, reply) => {
